@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Primeiro exercício de JavaScript</title>
+  <style>
+    body{
+      background-color: #6969e3;
+      color: #fff;
+      font: normal 25pt Arial;
+    }
+
+    h1{
+      color: yellowgreen;
+    }
+  </style>
+</head>
+<body>
+  <h1>Olá, mundo!</h1>
+  <p>Este é um parágrafo!</p>
+  <script>
+    var numero1 = Number(window.prompt("Digite o primeiro número: "));
+    var numero2 = Number.parseFloat(window.prompt("Digite o segundo número: "));
+    var numero3 = Number.parseInt(window.prompt("Digite o terceiro número: "));
+    var soma = numero1 + numero2 + numero3;
+    window.alert("A soma dos dois números é: " + soma.toString());
+    window.alert("A soma dos dois números é: " + String(soma));
+    window.alert(`A soma entre ${numero1}, ${numero2} e ${numero3} é : ${soma}`);
+    // (number + number) para adição
+    // (string + string) para concatenação
+  </script>
+</body>
+</html>
