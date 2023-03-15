@@ -25,8 +25,10 @@
     var numero2 = Number.parseFloat(window.prompt("Digite o segundo número: "));
     var numero3 = Number.parseInt(window.prompt("Digite o terceiro número: "));
     var soma = numero1 + numero2 + numero3;
+    //para converter number para string se usa o formato abaixo
     window.alert("A soma dos dois números é: " + soma.toString());
     window.alert("A soma dos dois números é: " + String(soma));
+    //A formula abaixo usa tamplate string (${}) para otimizar a escrita do código 
     window.alert(`A soma entre ${numero1}, ${numero2} e ${numero3} é : ${soma}`);
     // (number + number) para adição
     // (string + string) para concatenação
