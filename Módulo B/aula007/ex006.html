@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ex006
+  </title>
+  <Style>
+    body{
+      font: normal 20pt Arial;
+    }
+  </Style>
+</head>
+<body>
+  <script>
+    var nome = window.prompt("Qual é o seu nome?");
+    var sal = Number.parseFloat(window.prompt("Qual sua pretenção salarial?"));
+    document.write(`Olá <strong>${nome}</strong>.<br>Seu nome tem ${nome.length} letras.<br>`);
+    document.write(`Seu nome todo em maiúsculo fica assim: ${nome.toUpperCase()}<br>`);
+    document.write(`Seu nome todo em minúsculo fica assim: ${nome.toLowerCase()}<br>`);
+    document.write(`A pretenção salarial informada foi de ${sal.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}`);
+  </script>
+</body>
+</html>
